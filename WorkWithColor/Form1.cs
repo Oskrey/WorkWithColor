@@ -35,6 +35,8 @@ namespace WorkWithColor
             pic = openFileDialog1.FileName;
             bitmap = (Bitmap)Bitmap.FromFile(pic);
             original = (Bitmap)bitmap.Clone();
+            pictureBoxMain.Size = bitmap.Size;
+
             pictureBoxMain.Image = bitmap;
 
         }

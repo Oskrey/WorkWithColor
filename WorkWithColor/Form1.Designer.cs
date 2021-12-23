@@ -67,6 +67,7 @@ namespace WorkWithColor
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrigColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDesirColor)).BeginInit();
@@ -76,12 +77,13 @@ namespace WorkWithColor
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlue)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonPlus
             // 
             this.buttonPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonPlus.Location = new System.Drawing.Point(466, 26);
+            this.buttonPlus.Location = new System.Drawing.Point(14, -2);
             this.buttonPlus.Name = "buttonPlus";
             this.buttonPlus.Size = new System.Drawing.Size(30, 22);
             this.buttonPlus.TabIndex = 1;
@@ -92,7 +94,7 @@ namespace WorkWithColor
             // buttonMinus
             // 
             this.buttonMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMinus.Location = new System.Drawing.Point(466, 54);
+            this.buttonMinus.Location = new System.Drawing.Point(14, 26);
             this.buttonMinus.Name = "buttonMinus";
             this.buttonMinus.Size = new System.Drawing.Size(30, 22);
             this.buttonMinus.TabIndex = 1;
@@ -103,7 +105,7 @@ namespace WorkWithColor
             // buttonDefault
             // 
             this.buttonDefault.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDefault.Location = new System.Drawing.Point(466, 82);
+            this.buttonDefault.Location = new System.Drawing.Point(14, 54);
             this.buttonDefault.Name = "buttonDefault";
             this.buttonDefault.Size = new System.Drawing.Size(30, 22);
             this.buttonDefault.TabIndex = 1;
@@ -114,7 +116,7 @@ namespace WorkWithColor
             // buttonLeft
             // 
             this.buttonLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonLeft.Location = new System.Drawing.Point(466, 110);
+            this.buttonLeft.Location = new System.Drawing.Point(14, 82);
             this.buttonLeft.Name = "buttonLeft";
             this.buttonLeft.Size = new System.Drawing.Size(30, 22);
             this.buttonLeft.TabIndex = 1;
@@ -125,7 +127,7 @@ namespace WorkWithColor
             // buttonRight
             // 
             this.buttonRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonRight.Location = new System.Drawing.Point(466, 138);
+            this.buttonRight.Location = new System.Drawing.Point(14, 110);
             this.buttonRight.Name = "buttonRight";
             this.buttonRight.Size = new System.Drawing.Size(30, 22);
             this.buttonRight.TabIndex = 1;
@@ -136,7 +138,7 @@ namespace WorkWithColor
             // buttonVertical
             // 
             this.buttonVertical.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonVertical.Location = new System.Drawing.Point(466, 166);
+            this.buttonVertical.Location = new System.Drawing.Point(14, 138);
             this.buttonVertical.Name = "buttonVertical";
             this.buttonVertical.Size = new System.Drawing.Size(30, 22);
             this.buttonVertical.TabIndex = 1;
@@ -147,7 +149,7 @@ namespace WorkWithColor
             // buttonHorizontal
             // 
             this.buttonHorizontal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonHorizontal.Location = new System.Drawing.Point(466, 194);
+            this.buttonHorizontal.Location = new System.Drawing.Point(14, 166);
             this.buttonHorizontal.Name = "buttonHorizontal";
             this.buttonHorizontal.Size = new System.Drawing.Size(30, 22);
             this.buttonHorizontal.TabIndex = 1;
@@ -158,7 +160,7 @@ namespace WorkWithColor
             // buttonClear
             // 
             this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonClear.Location = new System.Drawing.Point(466, 222);
+            this.buttonClear.Location = new System.Drawing.Point(14, 194);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(30, 22);
             this.buttonClear.TabIndex = 1;
@@ -189,21 +191,21 @@ namespace WorkWithColor
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open..";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save as..";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -215,7 +217,7 @@ namespace WorkWithColor
             // 
             this.labelOriginalColor.AutoSize = true;
             this.labelOriginalColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelOriginalColor.Location = new System.Drawing.Point(499, 27);
+            this.labelOriginalColor.Location = new System.Drawing.Point(47, -1);
             this.labelOriginalColor.Name = "labelOriginalColor";
             this.labelOriginalColor.Size = new System.Drawing.Size(103, 16);
             this.labelOriginalColor.TabIndex = 3;
@@ -224,7 +226,7 @@ namespace WorkWithColor
             // pictureBoxOrigColor
             // 
             this.pictureBoxOrigColor.BackColor = System.Drawing.Color.Azure;
-            this.pictureBoxOrigColor.Location = new System.Drawing.Point(502, 55);
+            this.pictureBoxOrigColor.Location = new System.Drawing.Point(50, 27);
             this.pictureBoxOrigColor.Name = "pictureBoxOrigColor";
             this.pictureBoxOrigColor.Size = new System.Drawing.Size(52, 47);
             this.pictureBoxOrigColor.TabIndex = 4;
@@ -234,7 +236,7 @@ namespace WorkWithColor
             // 
             this.labelDesiredColor.AutoSize = true;
             this.labelDesiredColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelDesiredColor.Location = new System.Drawing.Point(499, 114);
+            this.labelDesiredColor.Location = new System.Drawing.Point(47, 86);
             this.labelDesiredColor.Name = "labelDesiredColor";
             this.labelDesiredColor.Size = new System.Drawing.Size(104, 16);
             this.labelDesiredColor.TabIndex = 3;
@@ -244,7 +246,7 @@ namespace WorkWithColor
             // 
             this.pictureBoxDesirColor.BackColor = System.Drawing.Color.Azure;
             this.pictureBoxDesirColor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxDesirColor.Location = new System.Drawing.Point(502, 142);
+            this.pictureBoxDesirColor.Location = new System.Drawing.Point(50, 114);
             this.pictureBoxDesirColor.Name = "pictureBoxDesirColor";
             this.pictureBoxDesirColor.Size = new System.Drawing.Size(52, 47);
             this.pictureBoxDesirColor.TabIndex = 4;
@@ -253,14 +255,14 @@ namespace WorkWithColor
             // 
             // textBoxSettingsColor1
             // 
-            this.textBoxSettingsColor1.Location = new System.Drawing.Point(584, 84);
+            this.textBoxSettingsColor1.Location = new System.Drawing.Point(132, 56);
             this.textBoxSettingsColor1.Name = "textBoxSettingsColor1";
             this.textBoxSettingsColor1.Size = new System.Drawing.Size(227, 20);
             this.textBoxSettingsColor1.TabIndex = 5;
             // 
             // textBoxSettingsColor2
             // 
-            this.textBoxSettingsColor2.Location = new System.Drawing.Point(584, 171);
+            this.textBoxSettingsColor2.Location = new System.Drawing.Point(132, 143);
             this.textBoxSettingsColor2.Name = "textBoxSettingsColor2";
             this.textBoxSettingsColor2.Size = new System.Drawing.Size(227, 20);
             this.textBoxSettingsColor2.TabIndex = 5;
@@ -268,7 +270,7 @@ namespace WorkWithColor
             // buttonDraw
             // 
             this.buttonDraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDraw.Location = new System.Drawing.Point(831, 55);
+            this.buttonDraw.Location = new System.Drawing.Point(379, 27);
             this.buttonDraw.Name = "buttonDraw";
             this.buttonDraw.Size = new System.Drawing.Size(77, 49);
             this.buttonDraw.TabIndex = 1;
@@ -278,7 +280,7 @@ namespace WorkWithColor
             // 
             // trackBarRed
             // 
-            this.trackBarRed.Location = new System.Drawing.Point(584, 234);
+            this.trackBarRed.Location = new System.Drawing.Point(132, 206);
             this.trackBarRed.Maximum = 255;
             this.trackBarRed.Name = "trackBarRed";
             this.trackBarRed.Size = new System.Drawing.Size(227, 45);
@@ -289,7 +291,7 @@ namespace WorkWithColor
             // 
             this.labelRed.AutoSize = true;
             this.labelRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRed.Location = new System.Drawing.Point(581, 212);
+            this.labelRed.Location = new System.Drawing.Point(129, 184);
             this.labelRed.Name = "labelRed";
             this.labelRed.Size = new System.Drawing.Size(37, 16);
             this.labelRed.TabIndex = 3;
@@ -299,7 +301,7 @@ namespace WorkWithColor
             // 
             this.labelGreen.AutoSize = true;
             this.labelGreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelGreen.Location = new System.Drawing.Point(581, 282);
+            this.labelGreen.Location = new System.Drawing.Point(129, 254);
             this.labelGreen.Name = "labelGreen";
             this.labelGreen.Size = new System.Drawing.Size(50, 16);
             this.labelGreen.TabIndex = 3;
@@ -307,7 +309,7 @@ namespace WorkWithColor
             // 
             // trackBarGreen
             // 
-            this.trackBarGreen.Location = new System.Drawing.Point(584, 305);
+            this.trackBarGreen.Location = new System.Drawing.Point(132, 277);
             this.trackBarGreen.Maximum = 255;
             this.trackBarGreen.Name = "trackBarGreen";
             this.trackBarGreen.Size = new System.Drawing.Size(227, 45);
@@ -318,7 +320,7 @@ namespace WorkWithColor
             // 
             this.labelBlue.AutoSize = true;
             this.labelBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelBlue.Location = new System.Drawing.Point(581, 353);
+            this.labelBlue.Location = new System.Drawing.Point(129, 325);
             this.labelBlue.Name = "labelBlue";
             this.labelBlue.Size = new System.Drawing.Size(39, 16);
             this.labelBlue.TabIndex = 3;
@@ -326,7 +328,7 @@ namespace WorkWithColor
             // 
             // trackBarAdmittance
             // 
-            this.trackBarAdmittance.Location = new System.Drawing.Point(584, 445);
+            this.trackBarAdmittance.Location = new System.Drawing.Point(132, 417);
             this.trackBarAdmittance.Maximum = 100;
             this.trackBarAdmittance.Minimum = 5;
             this.trackBarAdmittance.Name = "trackBarAdmittance";
@@ -338,7 +340,7 @@ namespace WorkWithColor
             // 
             this.labelAdmittance.AutoSize = true;
             this.labelAdmittance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelAdmittance.Location = new System.Drawing.Point(581, 420);
+            this.labelAdmittance.Location = new System.Drawing.Point(129, 392);
             this.labelAdmittance.Name = "labelAdmittance";
             this.labelAdmittance.Size = new System.Drawing.Size(85, 16);
             this.labelAdmittance.TabIndex = 3;
@@ -346,7 +348,7 @@ namespace WorkWithColor
             // 
             // trackBarBlue
             // 
-            this.trackBarBlue.Location = new System.Drawing.Point(584, 372);
+            this.trackBarBlue.Location = new System.Drawing.Point(132, 344);
             this.trackBarBlue.Maximum = 255;
             this.trackBarBlue.Name = "trackBarBlue";
             this.trackBarBlue.Size = new System.Drawing.Size(227, 45);
@@ -355,7 +357,7 @@ namespace WorkWithColor
             // 
             // textBoxRed
             // 
-            this.textBoxRed.Location = new System.Drawing.Point(831, 234);
+            this.textBoxRed.Location = new System.Drawing.Point(379, 206);
             this.textBoxRed.Multiline = true;
             this.textBoxRed.Name = "textBoxRed";
             this.textBoxRed.Size = new System.Drawing.Size(77, 29);
@@ -363,7 +365,7 @@ namespace WorkWithColor
             // 
             // textBoxGreen
             // 
-            this.textBoxGreen.Location = new System.Drawing.Point(831, 305);
+            this.textBoxGreen.Location = new System.Drawing.Point(379, 277);
             this.textBoxGreen.Multiline = true;
             this.textBoxGreen.Name = "textBoxGreen";
             this.textBoxGreen.Size = new System.Drawing.Size(77, 29);
@@ -371,7 +373,7 @@ namespace WorkWithColor
             // 
             // textBoxBlue
             // 
-            this.textBoxBlue.Location = new System.Drawing.Point(831, 372);
+            this.textBoxBlue.Location = new System.Drawing.Point(379, 344);
             this.textBoxBlue.Multiline = true;
             this.textBoxBlue.Name = "textBoxBlue";
             this.textBoxBlue.Size = new System.Drawing.Size(77, 29);
@@ -379,7 +381,7 @@ namespace WorkWithColor
             // 
             // textBoxAdmittance
             // 
-            this.textBoxAdmittance.Location = new System.Drawing.Point(831, 445);
+            this.textBoxAdmittance.Location = new System.Drawing.Point(379, 417);
             this.textBoxAdmittance.Multiline = true;
             this.textBoxAdmittance.Name = "textBoxAdmittance";
             this.textBoxAdmittance.Size = new System.Drawing.Size(77, 29);
@@ -388,10 +390,37 @@ namespace WorkWithColor
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.pictureBoxMain);
-            this.panel1.Location = new System.Drawing.Point(0, 27);
+            this.panel1.Controls.Add(this.textBoxAdmittance);
+            this.panel1.Controls.Add(this.pictureBoxOrigColor);
+            this.panel1.Controls.Add(this.textBoxBlue);
+            this.panel1.Controls.Add(this.buttonPlus);
+            this.panel1.Controls.Add(this.textBoxGreen);
+            this.panel1.Controls.Add(this.buttonDraw);
+            this.panel1.Controls.Add(this.textBoxRed);
+            this.panel1.Controls.Add(this.buttonMinus);
+            this.panel1.Controls.Add(this.trackBarBlue);
+            this.panel1.Controls.Add(this.buttonDefault);
+            this.panel1.Controls.Add(this.trackBarAdmittance);
+            this.panel1.Controls.Add(this.buttonLeft);
+            this.panel1.Controls.Add(this.trackBarGreen);
+            this.panel1.Controls.Add(this.buttonRight);
+            this.panel1.Controls.Add(this.trackBarRed);
+            this.panel1.Controls.Add(this.buttonVertical);
+            this.panel1.Controls.Add(this.textBoxSettingsColor2);
+            this.panel1.Controls.Add(this.buttonHorizontal);
+            this.panel1.Controls.Add(this.textBoxSettingsColor1);
+            this.panel1.Controls.Add(this.buttonClear);
+            this.panel1.Controls.Add(this.labelAdmittance);
+            this.panel1.Controls.Add(this.labelOriginalColor);
+            this.panel1.Controls.Add(this.pictureBoxDesirColor);
+            this.panel1.Controls.Add(this.labelRed);
+            this.panel1.Controls.Add(this.labelBlue);
+            this.panel1.Controls.Add(this.labelGreen);
+            this.panel1.Controls.Add(this.labelDesiredColor);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(469, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(460, 464);
+            this.panel1.Size = new System.Drawing.Size(460, 479);
             this.panel1.TabIndex = 9;
             // 
             // pictureBoxMain
@@ -399,9 +428,9 @@ namespace WorkWithColor
             this.pictureBoxMain.BackColor = System.Drawing.Color.SlateGray;
             this.pictureBoxMain.ErrorImage = null;
             this.pictureBoxMain.InitialImage = null;
-            this.pictureBoxMain.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxMain.Location = new System.Drawing.Point(3, 2);
             this.pictureBoxMain.Name = "pictureBoxMain";
-            this.pictureBoxMain.Size = new System.Drawing.Size(436, 444);
+            this.pictureBoxMain.Size = new System.Drawing.Size(123, 130);
             this.pictureBoxMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxMain.TabIndex = 9;
             this.pictureBoxMain.TabStop = false;
@@ -411,40 +440,24 @@ namespace WorkWithColor
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.pictureBoxMain);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 24);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(469, 479);
+            this.panel2.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(929, 503);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBoxAdmittance);
-            this.Controls.Add(this.textBoxBlue);
-            this.Controls.Add(this.textBoxGreen);
-            this.Controls.Add(this.textBoxRed);
-            this.Controls.Add(this.trackBarBlue);
-            this.Controls.Add(this.trackBarAdmittance);
-            this.Controls.Add(this.trackBarGreen);
-            this.Controls.Add(this.trackBarRed);
-            this.Controls.Add(this.textBoxSettingsColor2);
-            this.Controls.Add(this.textBoxSettingsColor1);
-            this.Controls.Add(this.labelAdmittance);
-            this.Controls.Add(this.pictureBoxDesirColor);
-            this.Controls.Add(this.labelBlue);
-            this.Controls.Add(this.labelDesiredColor);
-            this.Controls.Add(this.labelGreen);
-            this.Controls.Add(this.pictureBoxOrigColor);
-            this.Controls.Add(this.labelRed);
-            this.Controls.Add(this.labelOriginalColor);
-            this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.buttonHorizontal);
-            this.Controls.Add(this.buttonVertical);
-            this.Controls.Add(this.buttonRight);
-            this.Controls.Add(this.buttonLeft);
-            this.Controls.Add(this.buttonDefault);
-            this.Controls.Add(this.buttonMinus);
-            this.Controls.Add(this.buttonDraw);
-            this.Controls.Add(this.buttonPlus);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -458,7 +471,9 @@ namespace WorkWithColor
             ((System.ComponentModel.ISupportInitialize)(this.trackBarAdmittance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBlue)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -502,6 +517,7 @@ namespace WorkWithColor
         private System.Windows.Forms.TextBox textBoxAdmittance;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
